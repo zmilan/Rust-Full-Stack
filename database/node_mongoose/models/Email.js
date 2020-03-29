@@ -5,6 +5,9 @@ const Schema = mongoose.Schema;
 // Use Recruiter or Receiver instead when you make a separate GitHub.
 // Refer to it.
 // https://github.com/Automattic/mongoose/blob/master/examples/schema/schema.js
+
+// Include timestamps and use with dateOfEntry?
+// https://mongoosejs.com/docs/guide.html#timestamps
 const EmailSchema = new Schema({
   email: {
     type: mongoose.SchemaTypes.Email,
@@ -36,6 +39,8 @@ const EmailSchema = new Schema({
 //    : "I don't have a name";
 //  console.log(greeting);
 // }
+
+// You can use this instead also. https://mongoosejs.com/docs/guide.html#es6-classes
 
 const Email = mongoose.model('email', EmailSchema);
 

@@ -34,6 +34,10 @@ const getEmail = async (req, res) => {
     }
 };
 
+
+// Refer to this if you want to save various datas.
+// https://mongoosejs.com/docs/validation.html#the-unique-option-is-not-a-validator
+
 // $curl -X POST localhost:8000/api/email/v1 -H "Content-Type: application/json" -d '{ "email": "steady@learner.com" }'
 // $curl -X POST localhost:8000/api/email/v1 -H "Content-Type: application/json" -d '{ "email": "example@email.com" }'
 const registerEmail = async (req, res) => {

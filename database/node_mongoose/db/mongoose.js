@@ -25,6 +25,7 @@ const useMongo = async function() {
         // Should handle when database is not working. It shows TimeoutError.
 
         // Use this to develop. https://mongoosejs.com/docs/connections.html#multiple_connections
+        // Should close whenver necessary.
         process.on('SIGINT', function () {
             mongoose.connection.close(function () {
                 console.log("Mongoose default connection is disconnected due to application termination");
