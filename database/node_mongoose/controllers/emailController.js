@@ -1,3 +1,6 @@
+// https://mongoosejs.com/docs/populate.html
+// https://www.google.com/search?client=firefox-b-d&q=what+is+discriminator+in+mongoose
+
 const Email = require('../models/Email');
 
 // $curl -X GET localhost:8000/api/email/v1
@@ -61,6 +64,9 @@ const registerEmail = async (req, res) => {
         console.log(e);
     }
 };
+
+// Refer to this also.
+// https://mongoosejs.com/docs/models.html
 
 // $curl -X PATCH localhost:8000/api/email/v1/steady@learner.com -H "Content-Type: application/json" -d '{ "response": "true" }'
 const updateEmail = async (req, res) => {

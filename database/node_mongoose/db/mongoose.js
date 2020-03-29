@@ -10,6 +10,8 @@ const mongoURI = config.get("mongoURI");
 
 // [Should] Refer to this.
 // https://medium.com/@vsvaibhav2016/best-practice-of-mongoose-connection-with-mongodb-c470608483f0
+// https://mongoosejs.com/docs/api/connection.html#connection_Connection-readyState
+// https://mongoosejs.com/docs/api/connection.html#connection_Connection-watch
 
 const useMongo = async function() {
     try {
